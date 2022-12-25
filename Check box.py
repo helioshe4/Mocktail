@@ -1,5 +1,6 @@
 from tkinter import *
 from listofmocktails import Mocktails
+import docx
 
 root= Tk()
 
@@ -83,19 +84,35 @@ def makeadrink(mocktail):
         mktails_you_can_make.append([mocktail[0], mocktail[2][0], missingingredients]) #adds the mocktail name, instructions and missing ingredients respectively.
     return mktails_you_can_make
 
-# Sorting sorts a list according to length of elements in the 3rd element of the list
+# Sorting sorts a list according to length of items in the list
 def Sorting(sub_li):
     sub_li.sort(key=lambda x: len(x[2]))
     return sub_li
 
 #this loop performs the makeadrink function to all the mocktails
-for mocktail in Mocktails:
-    makeadrink(mocktail)
+#for mocktail in Mocktails:
+    #makeadrink(mocktail)
 
-#this sorts mktails_you_can_make according to the length of missing ingredients in ascending order
-Sorting(mktails_you_can_make)
+#this loop sorts mktails_you_can_make according to the length of missing ingredients in ascending order
+#Sorting(mktails_you_can_make)
 
-print(mktails_you_can_make)
+def main():
+    for mocktail in Mocktails:
+        makeadrink(mocktail)
+    Sorting(mktails_you_can_make)
+    print(mktails_you_can_make)
+
+    doc = docx.Document()
+    doc.add_heading('List of Cocktails to Make', 0)
+
+    for mocktail in mktails_you_can_make:
+        doc.add_heading(mocktail[0])
+        doc.add_paragraph(f'Ingredients required: {mocktail[2]}')
+        doc.add_paragraph(f'Instructions: {mocktail[1]}')
+
+    doc.save('test.docx')
+
+main()
 
 
 
