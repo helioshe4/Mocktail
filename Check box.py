@@ -97,17 +97,17 @@ def main():
     Sorting(mktails_you_can_make)
 
     for mocktail in mktails_you_can_make:
+        mocktail[2] = ', '.join(mocktail[2])
         if(len(mocktail[2]) == 0):
             mocktail[2] = 'No missing ingredients!'
-        mocktail[2] = ', '.join(mocktail[2])
     print(mktails_you_can_make)
 
     doc = docx.Document()
     doc.add_heading('List of Cocktails to Make', 0)
 
-        for mocktail in mktails_you_can_make:
+    for mocktail in mktails_you_can_make:
         doc.add_heading(mocktail[0])
-        doc.add_picture('Virgin Mojito.jpg', width=Inches(1), height=Inches(1))
+        #doc.add_picture(f'{mocktail[0]}.jpg', width=Inches(1), height=Inches(1))
         doc.add_paragraph(f"Ingredients required: {mocktail[2]}")
         doc.add_paragraph(f'Instructions: {mocktail[1]}')
 
