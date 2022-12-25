@@ -111,7 +111,7 @@ def main():
         doc.add_paragraph(f"Ingredients required: {mocktail[2]}")
         doc.add_paragraph(f'Instructions: {mocktail[1]}')
 
-    doc.save('test.docx')
+    doc.save('mocktails.docx')
 
 main()
 
