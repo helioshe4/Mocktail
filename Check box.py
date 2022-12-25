@@ -85,7 +85,7 @@ def makeadrink(mocktail):
 
 # Sorting sorts a list according to length of items in the list
 def Sorting(sub_li):
-    sub_li.sort(key = lambda x: x[2])
+    sub_li.sort(key=lambda x: len(x[2]))
     return sub_li
 
 #this loop performs the makeadrink function to all the mocktails
