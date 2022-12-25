@@ -73,7 +73,7 @@ for ingredient in range(len(listofingredients)):
         youringredients.append(listofingredients[ingredient][1])
 
 print(f"Your Ingredients are: ", end=" ")
-print(*youringredients)
+print(*youringredients, sep=", ")
 
 # new list of mocktails you can make (missing less then or = 3)
 mktails_you_can_make = []
@@ -90,10 +90,22 @@ def Sorting(sub_li):
     sub_li.sort(key=lambda x: len(x[2]))
     return sub_li
 
+#this loop performs the makeadrink function to all the mocktails
+#for mocktail in Mocktails:
+    #makeadrink(mocktail)
+
+#this loop sorts mktails_you_can_make according to the length of missing ingredients in ascending order
+#Sorting(mktails_you_can_make)
+
 def main():
     for mocktail in Mocktails:
         makeadrink(mocktail)
     Sorting(mktails_you_can_make)
+
+    for mocktail in mktails_you_can_make:
+        if(len(mocktail[2]) == 0):
+            mocktail[2] = 'No missing ingredients!'
+        #mocktail[2].replace('\'', '').replace('[', '').replace(']', '')
     print(mktails_you_can_make)
 
     doc = docx.Document()
@@ -101,7 +113,7 @@ def main():
 
     for mocktail in mktails_you_can_make:
         doc.add_heading(mocktail[0])
-        doc.add_paragraph(f'Ingredients required: {mocktail[2]}')
+        doc.add_paragraph(f"Ingredients required: {mocktail[2]}")
         doc.add_paragraph(f'Instructions: {mocktail[1]}')
 
     doc.save('test.docx')
