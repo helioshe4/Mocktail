@@ -105,7 +105,7 @@ def main():
     for mocktail in mktails_you_can_make:
         if(len(mocktail[2]) == 0):
             mocktail[2] = 'No missing ingredients!'
-        #mocktail[2].replace('\'', '').replace('[', '').replace(']', '')
+        mocktail[2] = ', '.join(mocktail[2])
     print(mktails_you_can_make)
 
     doc = docx.Document()
