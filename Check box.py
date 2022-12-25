@@ -61,6 +61,7 @@ var25 = IntVar()
 Checkbutton(root, text = "Cranberry Juice", variable = var25).grid(row=24,sticky=W)
 var26 = IntVar()
 Checkbutton(root, text = "Pomegranate", variable = var26).grid(row=25,sticky=W)
+Button(root,text = "OK", command=root.destroy, width=10).grid(row=26, sticky=W)
 
 root.mainloop()
 
