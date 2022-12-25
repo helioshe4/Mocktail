@@ -108,7 +108,7 @@ def main():
     for mocktail in mktails_you_can_make:
         doc.add_heading(mocktail[0])
         doc.add_picture(f'{mocktail[0]}.jpg', width=Inches(1), height=Inches(1))
-        doc.add_paragraph(f"Ingredients required: {mocktail[2]}")
+        doc.add_paragraph(f"Missing Ingredients: {mocktail[2]}")
         doc.add_paragraph(f'Instructions: {mocktail[1]}')
 
     doc.save('mocktails.docx')
