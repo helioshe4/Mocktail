@@ -72,7 +72,8 @@ for ingredient in range(len(listofingredients)):
     if listofingredients[ingredient][0].get()==1:
         youringredients.append(listofingredients[ingredient][1])
 
-print("Your Ingredients are:", youringredients)
+print(f"Your Ingredients are: ", end=" ")
+print(*youringredients)
 
 # new list of mocktails you can make (missing less then or = 3)
 mktails_you_can_make = []
@@ -113,9 +114,3 @@ def main():
     doc.save('test.docx')
 
 main()
-
-
-
-
-
-
