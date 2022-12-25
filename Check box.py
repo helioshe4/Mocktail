@@ -81,7 +81,7 @@ mktails_you_can_make = []
 # makeadrink adds all the drinks you can make to the list mktails_you_can_make
 def makeadrink(mocktail):
     missingingredients = list(set(mocktail[1]) - set(youringredients))
-    if len(missingingredients) <= 3:
+    if len(missingingredients) <= 2:
         mktails_you_can_make.append([mocktail[0], mocktail[2][0], missingingredients]) #adds the mocktail name, instructions and missing ingredients respectively.
     return mktails_you_can_make
 
@@ -113,7 +113,7 @@ def main():
 
     for mocktail in mktails_you_can_make:
         doc.add_heading(mocktail[0])
-        doc.add_paragraph(f"Ingredients required: {mocktail[2]}")
+        doc.add_paragraph(f"Missing Ingredients: {mocktail[2]}")
         doc.add_paragraph(f'Instructions: {mocktail[1]}')
 
     doc.save('test.docx')
