@@ -73,23 +73,29 @@ for ingredient in range(len(listofingredients)):
 
 print("Your Ingredients are:", youringredients)
 
+# new list of mocktails you can make (missing less then or = 3)
+mktails_you_can_make = []
+
+# makeadrink adds all the drinks you can make to the list mktails_you_can_make
 def makeadrink(mocktail):
     missingingredients = list(set(mocktail[1]) - set(youringredients))
     if len(missingingredients) <= 3:
-        print(mocktail[0])
-        print("Instructions:\n", mocktail[2][0])
-        print()
-        if len(missingingredients) == 0:
-            print("NO MISSING INGREDIENTS!")
-            print("\n")
-        else:
-            print("Missing Ingredients:",missingingredients)
-            print("\n")
+        mktails_you_can_make.append([mocktail[0], mocktail[2][0], missingingredients]) #adds the mocktail name, instructions and missing ingredients respectively.
+    return mktails_you_can_make
 
 # Sorting sorts a list according to length of items in the list
 def Sorting(sub_li):
     sub_li.sort(key = lambda x: x[2])
     return sub_li
+
+#this loop performs the makeadrink function to all the mocktails
+for mocktail in Mocktails:
+    makeadrink(mocktail)
+
+#this loop sorts mktails_you_can_make according to the length of missing ingredients in ascending order
+Sorting(mktails_you_can_make)
+
+print(mktails_you_can_make)
 
 
 
