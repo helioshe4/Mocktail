@@ -83,7 +83,7 @@ def makeadrink(mocktail):
         mktails_you_can_make.append([mocktail[0], mocktail[2][0], missingingredients]) #adds the mocktail name, instructions and missing ingredients respectively.
     return mktails_you_can_make
 
-# Sorting sorts a list according to length of items in the list
+# Sorting sorts a list according to length of elements in the 3rd element of the list
 def Sorting(sub_li):
     sub_li.sort(key=lambda x: len(x[2]))
     return sub_li
@@ -92,7 +92,7 @@ def Sorting(sub_li):
 for mocktail in Mocktails:
     makeadrink(mocktail)
 
-#this loop sorts mktails_you_can_make according to the length of missing ingredients in ascending order
+#this sorts mktails_you_can_make according to the length of missing ingredients in ascending order
 Sorting(mktails_you_can_make)
 
 print(mktails_you_can_make)
