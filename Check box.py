@@ -90,13 +90,6 @@ def Sorting(sub_li):
     sub_li.sort(key=lambda x: len(x[2]))
     return sub_li
 
-#this loop performs the makeadrink function to all the mocktails
-#for mocktail in Mocktails:
-    #makeadrink(mocktail)
-
-#this loop sorts mktails_you_can_make according to the length of missing ingredients in ascending order
-#Sorting(mktails_you_can_make)
-
 def main():
     for mocktail in Mocktails:
         makeadrink(mocktail)
