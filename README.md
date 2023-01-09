@@ -1,6 +1,6 @@
 # 🍹Make Me a Mocktail - Mocktail Recommender App
 
-P.S - Make sure you `pip install python-docx` for the app to work 
+P.S - Make sure you `pip install python-docx` in command prompt for the app to work 
 
 This mocktail recommender provides you with a list of mocktails that you can make with the chosen ingredients, along with instructions and images as well as missing ingredients (maximum of two missing ingredients), saved in a doc file named **mocktail.docx** which would be saved in the directory where you have saved this project.
 
