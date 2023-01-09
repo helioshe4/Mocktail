@@ -8,5 +8,5 @@ The motivation behind this project is to provide you with a beverage option outs
 **Note - For all recipes it is assumed that you have water and ice available.**
 
 You simple have to run `main.py` , select your ingredients and click on okay. 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
 
