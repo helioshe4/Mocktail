@@ -10,3 +10,4 @@ The motivation behind this project is to provide you with a beverage option outs
 You simply have to run `main.py` , select your ingredients and click on okay. 
 ![alt text](https://i.imgur.com/3jTkX3X.png)
 
+<img src="https://i.imgur.com/3jTkX3X.png" alt="checkbox" width="200"/>
