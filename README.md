@@ -21,5 +21,21 @@ pip install python-docx
 ## Usage
 You simply have to run `main.py` , select your ingredients and click on ok. 
 
+Image of checklist GUI
 <img src="https://i.imgur.com/3jTkX3X.png" alt="checkbox" width="200"/>
+
+Sample Output
 <img src="https://i.imgur.com/C4r2ClL.png" alt="checkbox" width="600"/>
+
+## Project Status
+Project is complete
+
+## Room for improvement
+To use a larger dataset that does not require images to exist within the same directory
+
+## Acknowledgements
+This project takes inspiration from myfridgefood.com
+
+## Contact
+Sharang Goel: s4goel@uwaterloo.ca
+Helios He: h22he@uwaterloo.ca
