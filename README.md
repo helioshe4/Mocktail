@@ -54,5 +54,4 @@ This project takes inspiration from <a href="https://myfridgefood.com/" target="
 
 ## Contact
 Sharang Goel: s4goel@uwaterloo.ca
-
 Helios He: h22he@uwaterloo.ca
