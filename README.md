@@ -1,5 +1,7 @@
 # 🍹Make Me a Mocktail - Mocktail Recommender App
 
+> Recipe recommender using tkinter and docx. Takes inputs of ingredients through a check list and returns a list of mocktails with images, instructions and missing ingredients, sorted in ascending order of missing ingredients with a maximum of two missing ingredients.
+
 P.S - Make sure you `pip install python-docx` in command prompt for the app to work 
 
 This mocktail recommender provides you with a list of mocktails that you can make with the chosen ingredients, along with instructions and images as well as missing ingredients (maximum of two missing ingredients), saved in a doc file named **mocktail.docx** which would be saved in the directory where you have saved this project.
