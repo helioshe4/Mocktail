@@ -26,10 +26,14 @@ Image of checklist GUI
 
 
 
-
 <img src="https://i.imgur.com/3jTkX3X.png" alt="checkbox" width="200"/>
 
 Sample Output
+
+
+
+
+
 <img src="https://i.imgur.com/C4r2ClL.png" alt="checkbox" width="600"/>
 
 ## Project Status
