@@ -44,7 +44,7 @@ Sample Output
 <img src="https://i.imgur.com/C4r2ClL.png" alt="checkbox" width="600"/>
 
 ## Project Status
-Project is complete
+Project is *complete*
 
 ## Room for improvement
 To use a larger dataset that does not require images to exist within the same directory
