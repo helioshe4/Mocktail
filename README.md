@@ -22,6 +22,11 @@ pip install python-docx
 You simply have to run `main.py` , select your ingredients and click on ok. 
 
 Image of checklist GUI
+
+
+
+
+
 <img src="https://i.imgur.com/3jTkX3X.png" alt="checkbox" width="200"/>
 
 Sample Output
