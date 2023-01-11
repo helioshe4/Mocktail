@@ -53,5 +53,5 @@ To use a larger dataset that does not require images to exist within the same di
 This project takes inspiration from <a href="https://myfridgefood.com/" target="_blank">MyFridgeFood</a>
 
 ## Contact
-Sharang Goel: s4goel@uwaterloo.ca
-Helios He: h22he@uwaterloo.ca
+-Sharang Goel: s4goel@uwaterloo.ca
+-Helios He: h22he@uwaterloo.ca
