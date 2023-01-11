@@ -50,7 +50,7 @@ Project is complete
 To use a larger dataset that does not require images to exist within the same directory
 
 ## Acknowledgements
-This project takes inspiration from <a href="https://myfridgefood.com/">MyFridgeFood!</a>
+This project takes inspiration from <a href="https://myfridgefood.com/" target="_blank">MyFridgeFood</a>
 
 ## Contact
 Sharang Goel: s4goel@uwaterloo.ca
